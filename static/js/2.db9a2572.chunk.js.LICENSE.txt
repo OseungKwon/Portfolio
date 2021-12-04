@@ -1,0 +1,89 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*!
+  * Scrolloverflow 2.0.6 module for fullPage.js >= 3
+  * https://github.com/alvarotrigo/fullPage.js
+  * @license MIT licensed
+  *
+  * Copyright (C) 2015 alvarotrigo.com - A project by Alvaro Trigo
+  */
+
+/*!
+  * fullPage 3.1.0 - Extensions 0.2.2
+  * https://github.com/alvarotrigo/fullPage.js
+  * @license http://alvarotrigo.com/fullPage/extensions/#license
+  *
+  * Copyright (C) 2018 alvarotrigo.com - A project by Alvaro Trigo
+  */
+
+/*!
+ * @fullpage/react-fullpage 0.1.19
+ * https://github.com/alvarotrigo/react-fullpage
+ * @license https://github.com/alvarotrigo/react-fullpage#license
+ *
+ * Copyright (C) 2018 alvarotrigo.com - A project by Alvaro Trigo & Michael Walker
+ */
+
+/**
+  * Customized version of iScroll.js 0.1.3
+  * It fixes bugs affecting its integration with fullpage.js
+  * @license
+  */
+
+/**
+ * @license
+ * Lodash <https://lodash.com/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/** @license React v0.20.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v17.0.2
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
