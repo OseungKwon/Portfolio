@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://oseungkwon.github.io/Portfolio/",
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.19",
