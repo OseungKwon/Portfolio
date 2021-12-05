@@ -24,6 +24,12 @@ const Bottom = styled.div`
   flex-direction: column;
   align-items: center;
   bottom: 2rem;
+  .DownButton {
+    cursor: pointer;
+    &:hover {
+      color: #3e3e3e;
+    }
+  }
 `;
 const Contact = styled.div`
   font-size: 1rem;
@@ -56,7 +62,13 @@ const Intro = () => {
           <b>Contact</b>email: 00osos@naver.com <b>|</b> github:
           <a href="https://github.com/OseungKwon">OseungKwon</a>
         </Contact>
-        <AiOutlineDown style={{ fontSize: "3rem" }} />
+        <AiOutlineDown
+          className="DownButton"
+          style={{ fontSize: "3rem" }}
+          onClick={() => {
+            window.scrollTo({ top: 1000, behavior: "smooth" });
+          }}
+        />
       </Bottom>
     </MainStyle>
   );

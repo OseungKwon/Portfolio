@@ -30,7 +30,7 @@ const Img1 = styled.div`
     cursor: e-resize;
   }
   z-index: 10;
-  width: 80%;
+  width: 90%;
   grid-column: 1/4;
   grid-row: 1;
 `;
@@ -101,11 +101,12 @@ const Highlight = styled.a`
 `;
 const Img = styled.img`
   width: 99%;
-  height: 500px;
+  height: 80%;
   object-fit: cover;
   border: 1px solid #afafaf;
 `;
 const Header = styled.div`
+  display: flex;
   z-index: 11;
   position: fixed;
   padding: 1rem;
@@ -114,15 +115,36 @@ const Header = styled.div`
   width: 100%;
   background-color: black;
   color: white;
+  font-weight: 900;
+  line-height: 2rem;
   font-size: 2rem;
 `;
+const Title = styled.div`
+  position: absolute;
+  top: 1.4rem;
+  left: 15rem;
+  font-weight: 300;
+`;
+
+const QuoteWrapper = styled.div`
+  position: relative;
+  display: flex;
+  padding-bottom: 1rem;
+  div {
+    font-size: 3rem;
+  }
+  div:first-child {
+    padding-right: 30rem;
+  }
+`;
+
 const Car = ({ end }) => {
   const { scrollY } = useScroll();
   const [doIt, setDoIt] = useState(true);
-  if (scrollY < 3200 && doIt) {
+  if (scrollY < 3600 && doIt) {
     setDoIt(false);
   }
-  if ((scrollY > 3200) & (doIt === false)) {
+  if ((scrollY > 3600) & (doIt === false)) {
     setDoIt(true);
   }
 
@@ -133,7 +155,15 @@ const Car = ({ end }) => {
 
   return (
     <div>
-      {doIt && <Header>프로젝트</Header>}
+      {doIt && (
+        <Header>
+          <QuoteWrapper>
+            <div>[</div>
+            <div>]</div>
+          </QuoteWrapper>
+          <Title>프로젝트</Title>
+        </Header>
+      )}
       <MainStyle>
         <Img1 {...useScrollFadeIn("up", 1, 0)}>
           <AliceCarousel

@@ -15,13 +15,12 @@ const MainStyle = styled.div`
 `;
 const QuoteWrapper = styled.div`
   display: flex;
-  padding-top: 1rem;
   padding-bottom: 1rem;
   div {
     font-size: 4rem;
   }
   div:first-child {
-    padding-right: 40rem;
+    padding-right: 23rem;
   }
 `;
 
@@ -81,7 +80,14 @@ const Top = () => {
   return (
     <div>
       <Intro style={{ display: `${show[1] ? "block" : "none"}` }}>
-        <div style={{ fontSize: "2rem", fontWeight: "bold" }}>
+        <div
+          style={{
+            fontSize: "2rem",
+            fontWeight: "bold"
+            //display: "flex",
+            //alignItems: "center"
+          }}
+        >
           저는
           <QuoteWrapper>
             <div>[</div>
@@ -139,7 +145,7 @@ html, css, js에 대한 강의를 초보 개발자들을 대상으로 진행하�
           </h3>
         </Content>
       </MainStyle>
-      <hr style={{ color: "white", borderColor: "white" }} />
+      {/* <hr style={{ color: "white", borderColor: "white" }} /> */}
     </div>
   );
 };
