@@ -9,7 +9,7 @@ const MainStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #8ac6d1;
   width: 100%;
   height: 100vh;
   font-size: 3rem;
@@ -29,6 +29,9 @@ const Bottom = styled.div`
     &:hover {
       color: #3e3e3e;
     }
+  }
+  .alice-carousel__dots-item.__active {
+    background-color: #3e3e3e;
   }
 `;
 const Contact = styled.div`

@@ -1,0 +1,31 @@
+.alice-carousel__dots {
+  margin: 30px 3px 5px;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: center;
+
+  & > li {
+    display: inline-block;
+  }
+
+  &-item:not(.__custom) {
+    width: 8px;
+    height: 8px;
+
+    cursor: pointer;
+
+    border-radius: 50%;
+    background-color: gray;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &:hover,
+    &.__active {
+      background-color: lighten(blue, 15%);
+    }
+  }
+}

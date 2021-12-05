@@ -27,7 +27,7 @@ const Quote = ({ start }) => {
   const { scrollY } = useScroll();
 
   const [doIt, setDoIt] = useState([1, 1, 1]);
-  const divide = [start + 100, start + 300, start + 600, start + 1000];
+  const divide = [start + 100, start + 300, start + 1000, start + 1200];
 
   if (scrollY > divide[0] && scrollY < divide[1] && doIt[0]) {
     setDoIt([0, 1, 1]);

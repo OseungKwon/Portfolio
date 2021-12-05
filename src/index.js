@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
 body {
   scroll-behavior: smooth;
   }
+
+
 `;
 ReactDOM.render(
   <React.StrictMode>

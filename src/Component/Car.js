@@ -3,7 +3,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { useScroll } from "../Hook/hooks";
 import useScrollFadeIn from "./useScrollFadeIn";
-
+import "../main.scss";
 import styled from "styled-components";
 
 import p1_1 from "../Img/p1_1.png";
