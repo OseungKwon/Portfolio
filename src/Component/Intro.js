@@ -9,7 +9,7 @@ const MainStyle = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #8ac6d1;
+  background-color: #e0e0e0;
   width: 100%;
   height: 100vh;
   font-size: 3rem;
