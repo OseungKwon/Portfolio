@@ -59,17 +59,5 @@ const Film = () => {
     </MainStyle>
   );
 };
-{
-  /* <AliceCarousel
-  items={this.state.galleryItems}
-  responsive={this.responsive}
-  autoPlayInterval={2000}
-  autoPlayDirection="rtl"
-  autoPlay={true}
-  fadeOutAnimation={true}
-  mouseTrackingEnabled={true}
-  disableAutoPlayOnAction={true}
-/>; */
-}
 
 export default Film;
