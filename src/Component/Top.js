@@ -37,7 +37,7 @@ const Content = styled.div`
   h3 {
     color: #bfbfbf;
   }
-  padding-top: 47rem;
+  padding-top: 45rem;
   line-height: 2rem;
 `;
 

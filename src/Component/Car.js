@@ -29,19 +29,23 @@ const Img1 = styled.div`
     -webkit-user-drag: none;
     cursor: e-resize;
   }
+  padding: 2rem;
+
   z-index: 10;
   width: 90%;
   grid-column: 1/4;
   grid-row: 1;
+  margin-bottom: 20rem;
 `;
 const Img2 = styled.div`
   img {
     -webkit-user-drag: none;
     cursor: e-resize;
   }
-  margin-top: 10rem;
+  padding: 2rem;
+
   margin-left: 3rem;
-  width: 100%;
+  width: 90%;
   grid-column: 3/5;
   grid-row: 2;
 `;
@@ -50,15 +54,16 @@ const Img3 = styled.div`
     -webkit-user-drag: none;
     cursor: e-resize;
   }
-  margin-top: 10rem;
+  padding: 2rem;
   width: 90%;
   grid-column: 1/4;
   grid-row: 3;
 `;
 
 const Text = styled.div`
+  font-height: 2rem;
   font-weight: bold;
-  padding: 2rem;
+  //padding: 2rem;
   font-size: 4rem;
 `;
 const Text2 = styled.div`
@@ -70,23 +75,20 @@ const Content = styled.div`
   white-space: pre-wrap;
   grid-column: 4;
   grid-row: 1;
-  padding: 2rem;
-  padding-top: 5rem;
+  padding-left: 2rem;
   font-size: 1rem;
 `;
 const Content2 = styled.div`
   white-space: pre-wrap;
   grid-column: 1/3;
   grid-row: 2;
-  margin-top: 15rem;
   font-size: 1rem;
 `;
 const Content3 = styled.div`
   white-space: pre-wrap;
   grid-column: 4;
   grid-row: 3;
-  padding: 2rem;
-  padding-top: 15rem;
+  padding-left: 2rem;
   font-size: 1rem;
 `;
 const Point = styled.div`
@@ -134,7 +136,7 @@ const QuoteWrapper = styled.div`
     font-size: 3rem;
   }
   div:first-child {
-    padding-right: 30rem;
+    padding-right: 23rem;
   }
 `;
 

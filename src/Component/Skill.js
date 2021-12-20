@@ -9,7 +9,8 @@ const MainStyle = styled.div`
   color: white;
   flex-direction: row;
   align-items: center;
-  height: 50vh;
+  justify-content: space-around;
+  height: 100vh;
 `;
 const Item = styled.div`
   display: inline;
@@ -49,7 +50,7 @@ const QuoteWrapper = styled.div`
     font-size: 3rem;
   }
   div:first-child {
-    padding-right: 30rem;
+    padding-right: 23rem;
   }
 `;
 const skills = [

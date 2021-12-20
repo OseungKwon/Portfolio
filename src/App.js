@@ -4,7 +4,6 @@ import Skill from "./Component/Skill";
 import Top from "./Component/Top";
 import ReactDOM from "react-dom";
 import ReactFullpage from "@fullpage/react-fullpage";
-import Services from "./Component/Services";
 import Intro from "./Component/Intro";
 
 const App = () => {
