@@ -1,74 +1,28 @@
 import React, { useState } from "react";
-import AliceCarousel from "react-alice-carousel";
-import "react-alice-carousel/lib/alice-carousel.css";
-import { useScroll } from "../Hook/hooks";
-import useScrollFadeIn from "./useScrollFadeIn";
-import "../main.scss";
 import styled from "styled-components";
 
+// Carousel
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import "../main.scss";
+
+// Scroll
+import { useScroll } from "../Hook/hooks";
+import useScrollFadeIn from "./useScrollFadeIn";
+
+// Images
 import p1_1 from "../Img/p1_1.png";
 import p1_2 from "../Img/p1_2.png";
 import p1_3 from "../Img/p1_3.png";
 import p1_4 from "../Img/p1_4.png";
 
 import p2 from "../Img/p2.png";
+
 import p3 from "../Img/Portfolio1.jpg";
-import { list } from "./CircleLinkedList";
 
-const MainStyle = styled.div`
-  padding: 10rem;
-  display: grid;
-  color: black;
-  background-color: #e0e0e0;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-`;
+// ------------- style
 
-const ImgArea = styled.div`
-  img {
-    -webkit-user-drag: none;
-    cursor: e-resize;
-  }
-  padding: 2rem;
-
-  z-index: 10;
-  width: 90%;
-  grid-column: 1/4;
-  grid-row: 1;
-  margin-bottom: 20rem;
-`;
-
-const Title = styled.div`
-  font-height: 2rem;
-  font-weight: bold;
-  //padding: 2rem;
-  font-size: 4rem;
-`;
-
-const ContentArea = styled.div`
-  white-space: pre-wrap;
-  grid-column: 4;
-  grid-row: 1;
-  padding-left: 2rem;
-  font-size: 1rem;
-`;
-
-const Subtitle = styled.div`
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  font-size: 1.5rem;
-`;
-
-const Highlight = styled.a`
-  color: #13ca91;
-  display: inline;
-`;
-const Img = styled.img`
-  width: 99%;
-  height: 80%;
-  object-fit: cover;
-  border: 1px solid #afafaf;
-`;
+// Header
 const Header = styled.div`
   display: flex;
   z-index: 11;
@@ -101,6 +55,65 @@ const QuoteWrapper = styled.div`
     padding-right: 23rem;
   }
 `;
+
+// Main
+
+const MainStyle = styled.div`
+  padding: 10rem;
+  display: grid;
+  color: black;
+  background-color: #e0e0e0;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+`;
+
+// ImgArea
+const ImgArea = styled.div`
+  img {
+    -webkit-user-drag: none;
+    cursor: e-resize;
+  }
+  padding: 2rem;
+  z-index: 10;
+  width: 90%;
+  grid-column: 1/4;
+  grid-row: 1;
+  margin-bottom: 20rem;
+`;
+const Img = styled.img`
+  width: 99%;
+  height: 80%;
+  object-fit: cover;
+  border: 1px solid #afafaf;
+`;
+
+// Content
+const ContentArea = styled.div`
+  white-space: pre-wrap;
+  grid-column: 4;
+  grid-row: 1;
+  padding-left: 2rem;
+  font-size: 1rem;
+`;
+const Title = styled.div`
+  font-height: 2rem;
+  font-weight: bold;
+  //padding: 2rem;
+  font-size: 4rem;
+`;
+const SubTitle = styled.div`
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+`;
+
+// etc
+const Highlight = styled.a`
+  color: #13ca91;
+  display: inline;
+`;
+
+// ------------- projects content
 
 const projects = [
   {
@@ -169,11 +182,11 @@ const Projects = () => {
 
             <ContentArea style={{ gridRow: `${index + 1}` }}>
               <Title>{project.name}</Title>
-              <Subtitle>설명</Subtitle>
+              <SubTitle>설명</SubTitle>
               {project.explain}
-              <Subtitle>진행 사항</Subtitle>
+              <SubTitle>진행 사항</SubTitle>
               {project.explain}
-              <Subtitle>기여</Subtitle>
+              <SubTitle>기여</SubTitle>
               {project.contribute}
             </ContentArea>
           </>
