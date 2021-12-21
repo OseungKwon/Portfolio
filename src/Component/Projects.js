@@ -8,7 +8,7 @@ import "../main.scss";
 
 // Scroll
 import { useScroll } from "../Hook/hooks";
-import useScrollFadeIn from "./useScrollFadeIn";
+import useScrollFadeIn from "../Hook/useScrollFadeIn";
 
 // Images
 import p1_1 from "../Img/p1_1.png";
@@ -20,7 +20,7 @@ import p2 from "../Img/p2.png";
 
 import p3 from "../Img/Portfolio1.jpg";
 
-// ------------- style
+/* ------------- header */
 
 // Header
 const Header = styled.div`
@@ -113,7 +113,7 @@ const Highlight = styled.a`
   display: inline;
 `;
 
-// ------------- projects content
+/* ------------- projects content */
 
 const projects = [
   {

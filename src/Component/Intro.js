@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { useScroll } from "../Hook/hooks";
-import useScrollFadeIn from "./useScrollFadeIn";
+
+// down icon
 import { AiOutlineDown } from "react-icons/ai";
 
+// scroll event
+import { useScroll } from "../Hook/hooks";
+import useScrollFadeIn from "../Hook/useScrollFadeIn";
+
+/* ------------- style */
+
+// main
 const MainStyle = styled.div`
   display: flex;
   flex-direction: column;
@@ -18,6 +25,8 @@ const MainStyle = styled.div`
     padding: 0.5rem;
   }
 `;
+
+// bottom
 const Bottom = styled.div`
   position: absolute;
   display: flex;
@@ -62,7 +71,7 @@ const Intro = () => {
       <div {...useScrollFadeIn("up", 1, 1.1)}>권오승입니다</div>
       <Bottom>
         <Contact {...useScrollFadeIn("up", 1, 2)}>
-          <b>Contact</b>email: 00osos@naver.com <b>|</b> github:
+          <b>Contact</b>email: 00osos@naver.com <b>|</b> github:&nbsp;
           <a href="https://github.com/OseungKwon">OseungKwon</a>
         </Contact>
         <AiOutlineDown

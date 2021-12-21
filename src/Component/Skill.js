@@ -1,25 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import useScrollFadeIn from "./useScrollFadeIn";
+import useScrollFadeIn from "../Hook/useScrollFadeIn";
 import { useScroll } from "../Hook/hooks";
 
-const MainStyle = styled.div`
-  display: flex;
-  padding: 10rem;
-  color: white;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  height: 100vh;
-`;
-const Item = styled.div`
-  display: inline;
-  font-size: 2rem;
-  padding: 2rem;
-`;
-const Space = styled.div`
-  height: 20rem;
-`;
+/* ------------- style */
+// header
 const Header = styled.div`
   display: flex;
   z-index: 11;
@@ -35,13 +20,6 @@ const Header = styled.div`
   font-size: 2rem;
   box-shadow: 1px 1px 1px 1px #444;
 `;
-const Title = styled.div`
-  position: absolute;
-  top: 1.4rem;
-  left: 15rem;
-  font-weight: 300;
-`;
-
 const QuoteWrapper = styled.div`
   position: relative;
   display: flex;
@@ -53,6 +31,30 @@ const QuoteWrapper = styled.div`
     padding-right: 23rem;
   }
 `;
+const Title = styled.div`
+  position: absolute;
+  top: 1.4rem;
+  left: 15rem;
+  font-weight: 300;
+`;
+
+// main
+const MainStyle = styled.div`
+  display: flex;
+  padding: 10rem;
+  color: white;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+`;
+const Item = styled.div`
+  display: inline;
+  font-size: 2rem;
+  padding: 2rem;
+`;
+
+/* ------------- skills content */
 const skills = [
   "JavaScript(ES8)",
   "React",
@@ -96,8 +98,6 @@ const Skill = () => {
           </Item>
         ))}
       </MainStyle>
-      {/* <hr style={{ color: "white", borderColor: "white" }} /> */}
-      {/* <Space /> */}
     </div>
   );
 };

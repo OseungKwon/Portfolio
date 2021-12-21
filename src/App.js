@@ -1,8 +1,8 @@
 import React from "react";
-import Projects from "./Component/Projects";
-import Skill from "./Component/Skill";
-import Top from "./Component/Top";
-import Intro from "./Component/Intro";
+import Projects from "./component/Projects";
+import Skill from "./component/Skill";
+import Top from "./component/Top";
+import Intro from "./component/Intro";
 
 const App = () => {
   return (
@@ -10,10 +10,7 @@ const App = () => {
       <Intro />
       <Top />
       <Skill />
-      {/* <Carousel />
-      <Carousel /> */}
       <Projects />
-      {/* <Services /> */}
     </div>
   );
 };
