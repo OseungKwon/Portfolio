@@ -132,10 +132,9 @@ const projects = [
     image: [p2]
   },
   {
-    name: "DEPL(QLICK)",
-    explain:
-      "초보 개발자, 혹은 사수가 없는 신입 개발자를 타겟으로, 코드 리뷰 서비스를 제공해주는 웹페이지. qna 페이지, 피드 페이지, 블로그 페이지, 코드 리뷰 서비스 페이지로 이루어져 있습니다.",
-    contribute: "bbb",
+    name: "Portfolio",
+    explain: "권오승의 포트폴리오 페이지",
+    contribute: "전체",
     image: [p3]
   }
 ];
