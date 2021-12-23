@@ -4,7 +4,7 @@ import Skill from "./component/Skill";
 import Top from "./component/Top";
 import Intro from "./component/Intro";
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <div style={{ backgroundColor: "black" }}>
       <Intro />
