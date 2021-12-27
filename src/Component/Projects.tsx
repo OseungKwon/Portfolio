@@ -146,7 +146,7 @@ const Projects = () => {
   if (scrollY < 3600 && doIt) {
     setDoIt(false);
   }
-  if ((scrollY > 3600) & (doIt === false)) {
+  if (scrollY > 3600 && doIt === false) {
     setDoIt(true);
   }
 
@@ -168,7 +168,7 @@ const Projects = () => {
             <ImgArea style={{ gridRow: `${index + 1}` }}>
               <AliceCarousel
                 autoPlay
-                autoPlayInterval="2500"
+                autoPlayInterval={2500}
                 disableButtonsControls
                 mouseTracking
                 infinite
