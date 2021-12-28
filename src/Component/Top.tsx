@@ -57,10 +57,11 @@ const Icon = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const Top = () => {
   const { scrollY } = useScroll();
-  const start = 900;
-  const end = 2500;
+  const start: number = 900;
+  const end: number = 2500;
   const [show, setShow] = useState([1, 0]);
   const [doIt, setDoIt] = useState([1, 1, 1]);
   console.log(start, scrollY, end);

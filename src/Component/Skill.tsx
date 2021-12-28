@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import useScrollFadeIn from "../Hook/useScrollFadeIn";
+//import useScrollFadeIn from "../Hook/useScrollFadeIn";
 import { useScroll } from "../Hook/hooks";
 
 /* ------------- style */
@@ -70,16 +70,16 @@ const Skill = () => {
   if (scrollY < 2700 && doIt) {
     setDoIt(false);
   }
-  if ((scrollY > 2700) & (doIt === false)) {
+  if (scrollY > 2700 && doIt === false) {
     setDoIt(true);
   }
-  const animatedItem = {
-    0: useScrollFadeIn("up", 1, 0),
-    1: useScrollFadeIn("up", 1, 0.1),
-    2: useScrollFadeIn("up", 1, 0.2),
-    3: useScrollFadeIn("up", 1, 0.3),
-    4: useScrollFadeIn("up", 1, 0.4)
-  };
+  // const animatedItem = {
+  //   0: useScrollFadeIn("up", 1, 0),
+  //   1: useScrollFadeIn("up", 1, 0.1),
+  //   2: useScrollFadeIn("up", 1, 0.2),
+  //   3: useScrollFadeIn("up", 1, 0.3),
+  //   4: useScrollFadeIn("up", 1, 0.4)
+  // };
   return (
     <div>
       {doIt && (
@@ -93,7 +93,9 @@ const Skill = () => {
       )}
       <MainStyle>
         {skills.map((skill, index) => (
-          <Item key={skill} {...animatedItem[index]}>
+          <Item
+            key={skill} //{...animatedItem[index]}
+          >
             {skill}
           </Item>
         ))}

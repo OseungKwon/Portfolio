@@ -8,7 +8,7 @@ import "../main.scss";
 
 // Scroll
 import { useScroll } from "../Hook/hooks";
-import useScrollFadeIn from "../Hook/useScrollFadeIn";
+//import useScrollFadeIn from "../Hook/useScrollFadeIn";
 
 // Images
 import p1_1 from "../Img/p1_1.png";

@@ -25,15 +25,19 @@ const SquareBrackets = styled.span`
   animation: ${blink} 0.7s steps(1) infinite;
 `;
 
-const Quote = ({ start }) => {
+interface IProps {
+  start: number;
+  end: number;
+}
+
+const Quote = ({ start }: IProps) => {
   const quote = ["나누는 것을 좋아하는", "배움에 주저함이 없는"];
   const [text, setText] = useState("");
   const { scrollY } = useScroll();
-
   const [doIt, setDoIt] = useState([1, 1, 1]);
   const divide = [start + 100, start + 300, start + 1000, start + 1200];
 
-  const quoteDisplay = (n) => {
+  const quoteDisplay = (n: number) => {
     for (let i = 1; i < quote[n].length + 1; i++) {
       (function (x) {
         setTimeout(function () {
