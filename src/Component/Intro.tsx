@@ -70,7 +70,7 @@ const Intro = () => {
       <div {...useScrollFadeIn("up", 1, 0.5)}>신입 프론트엔드 개발자</div>
       <div {...useScrollFadeIn("up", 1, 1.1)}>권오승입니다</div>
       <Bottom>
-        <Contact {...useScrollFadeIn("up", 1, 2)}>
+        <Contact>
           <b>Contact</b>email: 00osos@naver.com <b>|</b> github:&nbsp;
           <a href="https://github.com/OseungKwon">OseungKwon</a>
         </Contact>

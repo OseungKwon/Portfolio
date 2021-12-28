@@ -3,7 +3,7 @@ import { useRef, useEffect, useCallback } from "react";
 const useScrollFadeIn = (direction = "up", duration = 1, delay = 0) => {
   const element = useRef();
 
-  const handleDirection = (name) => {
+  const handleDirection = (name: string) => {
     switch (name) {
       case "up":
         return "translate3d(0, 20%, 0)";
