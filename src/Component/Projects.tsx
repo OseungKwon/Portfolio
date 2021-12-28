@@ -108,10 +108,10 @@ const SubTitle = styled.div`
 `;
 
 // etc
-const Highlight = styled.a`
-  color: #13ca91;
-  display: inline;
-`;
+// const Highlight = styled.a`
+//   color: #13ca91;
+//   display: inline;
+// `;
 
 /* ------------- projects content */
 
