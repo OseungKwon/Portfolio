@@ -35,7 +35,7 @@ const useScrollFadeIn = (direction = "up", duration = 1, delay = 0) => {
     [delay, duration]
   );
 
-  useEffect(() => {
+  useEffect((): any => {
     let observer: any;
 
     if (element.current) {
