@@ -139,7 +139,7 @@ const projects = [
 ];
 
 const Projects = () => {
-  console.log(projects);
+  console.log(projects, typeof projects);
   const { scrollY } = useScroll();
   const [doIt, setDoIt] = useState(true);
   if (scrollY < 3600 && doIt) {
